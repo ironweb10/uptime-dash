@@ -1,0 +1,19 @@
+    <nav class="navbar">
+      <a href="/" class="logo"><img src="https://cdn.discordapp.com/attachments/1052973225702858817/1054765147866005566/19c2f5be9060137aa50464c1c455c1e2.png" width="45" height="45"></a>
+      <input type="checkbox" id="toggler">
+      <label for="toggler"><i style="font-size: 20px; color: var(--font-color);" class="fa-solid fa-bars"></i></label>
+      <div class="menu">
+        <ul class="list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/uptime">Uptime</a></li>
+          <li><a href="https://dsc.gg/iron-web10">Discord Server</a></li>
+		  <% if(user) { %>
+		  <li><a href="/dashboard">Dashboard</a></li>
+		  <% } else { %>
+		  <li><a href="/login">Login</a></li>
+		  <% } %>
+		  </ul>
+      </div>
+    </nav>
+
+<script src="script.js"></script>
